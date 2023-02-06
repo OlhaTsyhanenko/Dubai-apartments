@@ -1,0 +1,27 @@
+.btn {
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-book {
+    padding: 12px 14px;
+    background-color: var(--accentColor);
+    color: var(--btnTextColor);
+    text-align: center;
+}
+
+.btn-send {
+    padding: 12px 35px;
+    color: var(--mainTextColor);
+    background-color: var(--bgColor);
+
+    @media screen and (min-width: $tablet) {
+        padding: 12px 65px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 23px 65px;
+    }
+}

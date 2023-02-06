@@ -1,0 +1,31 @@
+.title {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--mainTextColor);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 70px;
+    }
+}
+
+.description {
+    font-size: 14px;
+    color: var(--textColor);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.description-small {
+    font-size: 12px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+}

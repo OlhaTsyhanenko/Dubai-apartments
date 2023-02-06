@@ -1,0 +1,107 @@
+.section__expertise {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1400px;
+    }
+}
+
+.expertise__wrapper {
+    padding: 0 35px 40px 35px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 0 40px 70px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 0 60px 115px 60px;
+    }
+}
+
+.expertise__label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--accentColor);
+    text-align: left;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+.expertise__description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 23px;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 33px;
+        margin-bottom: 90px;
+    }
+}
+
+.expertise__img {
+    width: 100%;
+}
+
+.expertise__quote {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 22px 24px;
+    outline: 1px solid var(--accentColor);
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 34px 98px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 120px 405px 64px 405px;
+        padding: 70px 95px;
+    }
+
+    span {
+        color: var(--accentColor);
+    }
+}
+
+.expertise__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 288px;
+    grid-row-gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: repeat(2, 328px);
+        grid-column-gap: 30px;
+        grid-row-gap: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        grid-template-columns: repeat(2, 543px);
+        grid-column-gap: 23px;
+    }
+}
+
+.item__description {
+    margin-top: 20px;
+    @media screen and (min-width: $tablet) {
+        margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 70px;
+    }
+}
