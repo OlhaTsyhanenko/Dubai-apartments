@@ -124,6 +124,16 @@ body {
   }
 }
 
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1400px) {
+  .section {
+    max-width: 1400px;
+  }
+}
+
 .section__expertise {
   margin-left: auto;
   margin-right: auto;
@@ -244,4 +254,98 @@ body {
   .item__description {
     margin-top: 70px;
   }
+}
+
+.section__contact {
+  padding: 50px 35px;
+  background-color: var(--accentColor);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg_mobile.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section__contact {
+    background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg@2x_mobile.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__contact {
+    padding: 50px 0px 60px 0px;
+    background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg_tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section__contact {
+    background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg@2x_tablet.jpg);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section__contact {
+    padding: 85px 0px;
+    background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg_desktop.jpg);
+  }
+}
+@media screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), screen and (min-width: 1400px) and (min-resolution: 192dpi), screen and (min-width: 1400px) and (min-resolution: 2dppx) {
+  .section__contact {
+    background-image: linear-gradient(to right, rgba(252, 213, 76, 0.8), rgba(252, 213, 76, 0.8)), url(../images/form/bg@2x_desktop.jpg);
+  }
+}
+
+.contact__description {
+  color: var(--bgColor);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__description {
+    margin-bottom: 15px;
+  }
+}
+
+.contact__title {
+  color: var(--bgColor);
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contact__title {
+    font-size: 120px;
+  }
+}
+
+.request__form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background-color: var(--mainTextColor);
+  color: var(--bgColor);
+}
+@media screen and (min-width: 768px) {
+  .form__input {
+    padding: 12px 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form__input {
+    padding: 23px 42px;
+  }
+}
+.form__input:focus {
+  border: none;
 }/*# sourceMappingURL=main.css.map */

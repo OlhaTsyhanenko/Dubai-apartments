@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <section class="section__expertise">
+    <section class="section section__expertise">
       <div class="expertise__wrapper">
         <p class="expertise__label">Our expertise</p>
         <h2 class="title">
@@ -175,6 +175,27 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="section section__contact">
+      <p class="description-small contact__description">
+        Do you have any questions?
+      </p>
+      <h2 class="contact__title">Contact us</h2>
+      <form class="request__form">
+        <div class="form__field">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="form__input"
+            placeholder="Enter your mail"
+          />
+          <!-- <label for="name" class="form__label">Enter your mail</label> -->
+        </div>
+        <button type="submit" class="btn btn-send">Send</button>
+      </form>
     </section>
   </body>
 </html>

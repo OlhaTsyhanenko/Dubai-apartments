@@ -1,0 +1,109 @@
+.section__contact {
+    padding: 50px 35px;
+    background-color: var(--accentColor);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+                rgba(252, 213, 76, .8),
+                rgba(252, 213, 76, .8)),
+                url(../images/form/bg_mobile.jpg);
+
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                rgba(252, 213, 76, .8),
+                rgba(252, 213, 76, .8)),
+                url(../images/form/bg@2x_mobile.jpg);
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 50px 0px 60px 0px;
+        background-image: linear-gradient(to right,
+                    rgba(252, 213, 76, .8),
+                    rgba(252, 213, 76, .8)),
+                url(../images/form/bg_tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(252, 213, 76, .8),
+                    rgba(252, 213, 76, .8)),
+                    url(../images/form/bg@2x_tablet.jpg);
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 85px 0px;
+        background-image: linear-gradient(to right,
+                    rgba(252, 213, 76, .8),
+                    rgba(252, 213, 76, .8)),
+                url(../images/form/bg_desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(252, 213, 76, .8),
+                    rgba(252, 213, 76, .8)),
+                    url(../images/form/bg@2x_desktop.jpg);
+        }
+    }
+}
+
+.contact__description {
+    color: var(--bgColor);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 15px;
+    }
+}
+
+.contact__title {
+    color: var(--bgColor);
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 49px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 120px;
+    }
+}
+
+.request__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: var(--mainTextColor);
+    color: var(--bgColor);
+
+    @media screen and (min-width: $tablet) {
+        padding: 12px 28px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 23px 42px;
+    }
+
+    &:focus {
+        border: none;
+    }
+}
