@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-down" viewBox="0 0 48 32">
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M23.596 28.973l22.913-25.895"></path>
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0.739 3.080l22.913 25.895"></path>
+</symbol>
+<symbol id="icon-right" viewBox="0 0 19 32">
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M17.455 16.037l-16.478-14.581"></path>
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M0.976 30.582l16.478-14.581"></path>
+</symbol>
+</defs>
+</svg>

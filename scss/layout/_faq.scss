@@ -1,0 +1,41 @@
+.section__faq {
+    padding: 50px 36px;
+
+    @media screen and (min-width:$tablet) {
+        padding: 70px 36px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding: 120px 405px;
+    }
+}
+
+.faq__list {
+    border-top: 1px solid var(--secondTextColor);
+    border-bottom: 1px solid var(--secondTextColor);
+    padding-bottom: 20px;
+}
+
+.faq__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid var(--secondTextColor);
+        padding-bottom: 10px;
+    }
+}
+
+.descr {
+    padding: 30px 40px 30px 30px;
+}
+
+.description-small {
+    &.hidden {
+    display: none;
+    }
+}
+
+
