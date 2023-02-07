@@ -19,7 +19,7 @@ let imgChecked = document.querySelectorAll('.checked');
 let imgNotChecked = document.querySelectorAll('.not-checked');
 
 for (let i = 0; i < change.length; i++) {
-    if (p[i]) {
+    // if (p[i]) {
         const showCheckbox = () => {
 
             imgChecked[i].classList.toggle('visible');
@@ -32,5 +32,5 @@ for (let i = 0; i < change.length; i++) {
         }
         imgChecked[i].addEventListener('click', showCheckbox);
         imgNotChecked[i].addEventListener('click', showCheckbox)
-    }
+    // }
 }
