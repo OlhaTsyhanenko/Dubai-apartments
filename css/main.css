@@ -394,4 +394,12 @@ body {
 
 .description-small.hidden {
   display: none;
+}
+
+.btn-faq__img {
+  display: none;
+}
+
+.visible {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
