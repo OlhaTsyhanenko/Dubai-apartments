@@ -8,5 +8,13 @@
 <path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M17.455 16.037l-16.478-14.581"></path>
 <path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M0.976 30.582l16.478-14.581"></path>
 </symbol>
+<symbol id="icon-arrow" viewBox="0 0 19 32">
+<path fill="none" stroke="#929292" style="stroke: var(--color1, #929292)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M16.941 16.018l-15.058-14.135"></path>
+<path fill="none" stroke="#929292" style="stroke: var(--color1, #929292)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M1.882 30.118l15.058-14.135"></path>
+</symbol>
+<symbol id="icon-arrow-orange" viewBox="0 0 21 32">
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M18.917 17.153l-15.359-13.599"></path>
+<path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M3.556 30.722l15.359-13.599"></path>
+</symbol>
 </defs>
 </svg>

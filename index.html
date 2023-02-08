@@ -198,6 +198,96 @@
       </form>
     </section>
 
+    <section class="section section__useful">
+      <div class="useful-title__wrapper">
+        <h2 class="title">Useful articles</h2>
+        <button type="button" class="btn btn-useful__view">
+          View all articles
+          <svg width="8px" height="15px">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="useful-content__wrapper">
+        <picture>
+          <source
+            srcset="
+              ./images/useful/pic1_desktop.jpg    1x,
+              ./images/useful/pic1@2x_desktop.jpg 2x
+            "
+            media="(min-width: 1400px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/useful/pic1_tablet.jpg    1x,
+              ./images/useful/pic1@2x_tablet.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/useful/pic1_mobile.jpg    1x,
+              ./images/useful/pic1@2x_mobile.jpg 2x
+            "
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <img
+            class="useful__img"
+            src="./images/useful/pic1_desktop.jpg"
+            alt="pic1"
+          />
+        </picture>
+        <div class="useful__info">
+          <p class="description-small">Jule 03, 2022</p>
+          <p class="info_title">Discover Architecture</p>
+          <p class="description-small">
+            Projects for many large domestic and foreign corporations,
+            enterprises in many elds such
+          </p>
+          <button type="button" class="btn btn-useful__learn">
+            Learn more
+            <svg width="5px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-arrow-orange"></use>
+            </svg>
+          </button>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/useful/pic2_desktop.jpg    1x,
+              ./images/useful/pic2@2x_desktop.jpg 2x
+            "
+            media="(min-width: 1400px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/useful/pic2_tablet.jpg    1x,
+              ./images/useful/pic2@2x_tablet.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/useful/pic2_mobile.jpg    1x,
+              ./images/useful/pic2@2x_mobile.jpg 2x
+            "
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <img
+            class="useful__img"
+            src="./images/useful/pic2_desktop.jpg"
+            alt="pic2"
+          />
+        </picture>
+      </div>
+    </section>
+
     <section class="section section__faq">
       <h2 class="title">FAQ</h2>
       <ul class="list faq__list">
