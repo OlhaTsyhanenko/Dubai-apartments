@@ -27,11 +27,11 @@
 
 .useful-content__wrapper {
     display: grid;
-    justify-content: center;
     grid-row-gap: 20px;
 
     @media screen and (min-width:$tablet) {
-        grid-template-columns: repeat(3, 210px);
+        justify-content: center;
+        grid-template-columns: repeat(3, 3fr);
         grid-column-gap: 30px;
     }
 

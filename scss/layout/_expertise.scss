@@ -15,7 +15,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        padding: 0 60px 115px 60px;
+        padding: 115px 145px;
     }
 }
 
@@ -69,7 +69,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-        margin: 120px 145px 64px 145px;
+        margin-top: 0;
+        margin-bottom: 65px;
         padding: 70px 95px;
     }
 
@@ -81,11 +82,10 @@
 .expertise__list {
     display: grid;
     justify-content: center;
-    grid-template-columns: 288px;
     grid-row-gap: 20px;
 
     @media screen and (min-width: $tablet) {
-        grid-template-columns: repeat(2, 328px);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 0;
     }
@@ -94,6 +94,10 @@
         grid-template-columns: repeat(2, 543px);
         grid-column-gap: 23px;
     }
+}
+
+.flat_img {
+    width: 100%;
 }
 
 .item__description {
