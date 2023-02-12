@@ -1,7 +1,86 @@
+.footer__wrap {
+    padding: 40px 38px 60px 38px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
+    @media screen and (min-width: $tablet) {
+        padding: 40px 40px 28px 40px;
+    }
 
+    @media screen and (min-width: $desktop) {
+        padding: 70px 26px 95px 26px;
+    }
 
-.footer__logo-img {
-    width: 184px;
-    height: 63px;
 }
+
+
+.footer__list-main {
+    margin-top: 40px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 27px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+.footer__item-main {
+    @media screen and (max-width: 1399px) {
+        &:not(:last-child){
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .hidden {
+            display: none;
+        }
+    }
+    &:not(:last-child) {
+        @media screen and (min-width: $desktop) {
+            margin-right: 60px;
+        }
+    }
+}
+
+
+.list-main__title {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-bottom: 40px;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.16;
+    color: var(--textColor);
+
+    &:hover,
+    &:focus {
+        color: var(--accentColor);
+    }
+}
+
+.btn-position {
+    @media screen and (min-width:$tablet) and (max-width: 1399px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.down-menu {
+    background-color: transparent;
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+}
+

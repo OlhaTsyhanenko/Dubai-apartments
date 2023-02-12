@@ -8,10 +8,18 @@
 }
 
 .btn-book {
+    @media screen and (max-width: 767px) {
+        padding: 23px 54px;
+        margin: 0 auto;
+        margin-top: 52px;
+    }
     padding: 12px 14px;
     background-color: var(--accentColor);
     color: var(--btnTextColor);
     text-align: center;
+    @media screen and (min-width:$desktop) {
+        margin-top: 78px;
+    }
 }
 
 .btn-send {

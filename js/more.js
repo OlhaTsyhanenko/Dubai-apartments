@@ -1,16 +1,14 @@
-let btn = document.getElementsByClassName('btn-faq');
-let p = document.getElementsByClassName('descr');
+let btn = document.getElementsByClassName('btn-js');
+let p = document.getElementsByClassName('hidden-js');
 
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', function () {
-        if (p[i]) {
             let content = p[i];
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
             } else {
                 content.classList.add('hidden');
             }
-        }
     });
 }
 
