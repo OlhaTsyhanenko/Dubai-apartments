@@ -1,0 +1,43 @@
+.logo-title {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--mainTextColor);
+}
+
+.logo-description {
+    font-size: 11px;
+    color: var(--mainTextColor);
+    line-height: 1.18;
+    opacity: .6;
+    margin-top: 4px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-inner {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 7px;
+    padding-left: 15px;
+}
+
+.logo-inner::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 63px;
+    border-top: 2px solid #FCD54C;
+    border-bottom: 2px solid #FCD54C;
+    border-left: 2px solid #FCD54C;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
