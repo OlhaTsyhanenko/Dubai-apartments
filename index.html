@@ -28,6 +28,134 @@
   </head>
   <body>
     <main>
+      <section class="section__projects">
+        <h1 class="title">Latest projects</h1>
+        <ul class="list projects__list">
+          <li class="projects__item current">All</li>
+          <li class="projects__item">Building</li>
+          <li class="projects__item">Interior</li>
+          <li class="projects__item selection">View all projects</li>
+        </ul>
+        <ul class="list projects__list-work">
+          <li class="projects__item-work overlay">
+            <picture>
+              <source
+                srcset="
+                  ./images/project/pic1_desktop.jpg    1x,
+                  ./images/project/pic1@2x_desktop.jpg 2x
+                "
+                media="(min-width: 1400px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic1_tablet.jpg    1x,
+                  ./images/project/pic1@2x_tablet.jpg 2x
+                "
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic1_mobile.jpg    1x,
+                  ./images/project/pic1@2x_mobile.jpg 2x
+                "
+                media="(max-width: 767px)"
+                type="image/jpeg"
+              />
+              <img
+                class="projects__img"
+                src="./images/project/pic1_desktop.jpg"
+                alt="pic1"
+              />
+            </picture>
+            <p class="projects__title-work">Villas</p>
+          </li>
+          <li class="projects__item-work item-work__description">
+            <p class="item-work__title">Dubai</p>
+            <p class="description-small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+              molestie integer aliquam consectetur. Faucibus vitae dui massa
+              tellus magna sit.
+            </p>
+            <button type="button" class="btn btn-useful__learn">
+              See project
+              <svg width="5px" height="8px">
+                <use href="./images/symbol-defs.svg#icon-arrow-orange"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="projects__item-work overlay">
+            <picture>
+              <source
+                srcset="
+                  ./images/project/pic2_desktop.jpg    1x,
+                  ./images/project/pic2@2x_desktop.jpg 2x
+                "
+                media="(min-width: 1400px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic2_tablet.jpg    1x,
+                  ./images/project/pic2@2x_tablet.jpg 2x
+                "
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic2_mobile.jpg    1x,
+                  ./images/project/pic2@2x_mobile.jpg 2x
+                "
+                media="(max-width: 767px)"
+                type="image/jpeg"
+              />
+              <img
+                class="projects__img"
+                src="./images/project/pic2_desktop.jpg"
+                alt="pic2"
+              />
+            </picture>
+            <p class="projects__title-work">Villas</p>
+          </li>
+          <li class="projects__item-work overlay">
+            <picture>
+              <source
+                srcset="
+                  ./images/project/pic3_desktop.jpg    1x,
+                  ./images/project/pic3@2x_desktop.jpg 2x
+                "
+                media="(min-width: 1400px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic3_tablet.jpg    1x,
+                  ./images/project/pic3@2x_tablet.jpg 2x
+                "
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/project/pic3_mobile.jpg    1x,
+                  ./images/project/pic3@2x_mobile.jpg 2x
+                "
+                media="(max-width: 767px)"
+                type="image/jpeg"
+              />
+              <img
+                class="projects__img"
+                src="./images/project/pic3_desktop.jpg"
+                alt="pic1"
+              />
+            </picture>
+            <p class="projects__title-work">Villas</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="section section__expertise">
         <div class="expertise__wrapper">
           <p class="expertise__label">Our expertise</p>
