@@ -666,7 +666,7 @@ body {
 }
 
 .section__useful {
-  padding: 45px 15px;
+  padding: 45px 15px 84px 15px;
 }
 @media screen and (min-width: 768px) {
   .section__useful {
@@ -706,6 +706,8 @@ body {
     justify-content: center;
     grid-template-columns: repeat(3, 3fr);
     grid-column-gap: 30px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 0;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -744,6 +746,101 @@ body {
     font-size: 35px;
     margin-top: 15px;
     margin-bottom: 28px;
+  }
+}
+
+.section__rewiews {
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .section__rewiews {
+    padding: 0 36px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section__rewiews {
+    padding: 0 145px;
+  }
+}
+
+.rewiews__wrapper {
+  position: relative;
+  padding: 50px 26px 15px 26px;
+  border: 1px solid var(--accentColor);
+  min-height: 192px;
+}
+@media screen and (min-width: 768px) {
+  .rewiews__wrapper {
+    min-height: 200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .rewiews__wrapper {
+    padding: 104px 30px 20px 30px;
+    height: 311px;
+  }
+}
+
+.rewiews__img {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  transform: translateY(-50%);
+  width: 68px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1400px) {
+  .rewiews__img {
+    width: 112px;
+    left: 30px;
+  }
+}
+
+.rewiews__svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.rewiews__name {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--mainTextColor);
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 1400px) {
+  .rewiews__name {
+    margin-bottom: 20px;
+  }
+}
+
+.rewiews__job {
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--mainTextColor);
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1400px) {
+  .rewiews__job {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+}
+.rewiews__job span {
+  color: var(--accentColor);
+}
+
+.rewiews__description {
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--secondTextColor);
+}
+@media screen and (min-width: 1400px) {
+  .rewiews__description {
+    font-size: 16px;
+    line-height: 1.625;
   }
 }
 
