@@ -16,6 +16,9 @@
 <path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M18.917 17.153l-15.359-13.599"></path>
 <path fill="none" stroke="#fcd54c" style="stroke: var(--color1, #fcd54c)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M3.556 30.722l15.359-13.599"></path>
 </symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 20 32">
+<path d="M2.224 0l17.298 15.819-17.655 16.181-1.867-2.041 15.426-14.137-15.070-13.781z"></path>
+</symbol>
 <symbol id="icon-down-menu" viewBox="0 0 50 32">
 <path fill="none" stroke="#929292" style="stroke: var(--color1, #929292)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M24.861 27.681l21.359-24.124"></path>
 <path fill="none" stroke="#929292" style="stroke: var(--color1, #929292)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M3.556 3.556l21.359 24.124"></path>
