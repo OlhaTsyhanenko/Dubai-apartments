@@ -767,17 +767,17 @@ body {
   position: relative;
   padding: 50px 26px 15px 26px;
   border: 1px solid var(--accentColor);
-  min-height: 192px;
 }
 @media screen and (min-width: 768px) {
-  .rewiews__wrapper {
-    min-height: 200px;
+  .rewiews__wrapper:not(:last-child) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1400px) {
   .rewiews__wrapper {
     padding: 104px 30px 20px 30px;
     height: 311px;
+    width: 525px;
   }
 }
 
@@ -841,6 +841,23 @@ body {
   .rewiews__description {
     font-size: 16px;
     line-height: 1.625;
+  }
+}
+
+.slider {
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.slider-line {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all ease 1s;
+  margin-top: 34px;
+}
+@media screen and (min-width: 1400px) {
+  .slider-line {
+    margin-top: 56px;
   }
 }
 
