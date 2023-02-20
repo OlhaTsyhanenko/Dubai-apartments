@@ -15,12 +15,12 @@ function init() {
     cards.forEach(item => {
         if (window.innerWidth >= 768) {
             item.style.width = width / 2 - 15 + 'px';
-            console.log('width', item.style.width);
             item.style.height = 'auto';
-        } else
-            item.style.width = width + 'px';
-        console.log('width', item.style.width);
-        item.style.height = 'auto';
+        } else {
+           item.style.width = width + 'px';
+            item.style.height = 'auto';
+        }
+
     });
     rollSlider();
 }
@@ -30,30 +30,32 @@ init();
 
 document.querySelector('.slider-prev').addEventListener('click', function () {
     count--;
-    if (count <0) {
-        count = cards.length -1;
+    if ((window.innerWidth >= 768) && (count <0)) {
+        count = cards.length -2;
+    }
+    if (count < 0) {
+       count = cards.length -1;
     }
     rollSlider();
 });
 
 document.querySelector('.slider-next').addEventListener('click', function () {
     count++;
-    console.log(count);
+    if ((window.innerWidth >= 768) && (count >= cards.length-1)) {
+        count = 0;
+    }
     if (count >= cards.length) {
         count = 0;
     }
-    if (window.innerWidth >= 768) {
-        sliderLine.style.transform = 'translate(-' + (count * width + 30) + 'px)';
-        console.log(sliderLine.style.transform);
-    } else {
-        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-    }
-    // rollSlider();
+    rollSlider();
 });
 
 function rollSlider() {
-    sliderLine.style.transform = 'translate(-' + (count * width) + 'px)';
-    console.log(sliderLine.style.transform);
+    if (window.innerWidth >= 768) {
+        sliderLine.style.transform = 'translate(-' + (count * (width/2 + 15)) + 'px)';
+    } else {
+        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+    }
 }
 
-console.log(window.innerWidth);
+

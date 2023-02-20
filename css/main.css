@@ -220,6 +220,17 @@ body {
   fill: var(--bgColor);
 }
 
+.rewiews__btn-wrapper .slider-prev {
+  margin-right: 30px;
+}
+.rewiews__btn-wrapper .slider-prev svg {
+  transform: rotate(180deg);
+}
+.rewiews__btn-wrapper .slider-prev,
+.rewiews__btn-wrapper .slider-next {
+  background-color: transparent;
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -845,7 +856,6 @@ body {
 }
 
 .slider {
-  border: 2px solid white;
   overflow: hidden;
 }
 
@@ -858,6 +868,18 @@ body {
 @media screen and (min-width: 1400px) {
   .slider-line {
     margin-top: 56px;
+  }
+}
+
+.rewiews__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .rewiews__btn-wrapper {
+    margin-top: 36px;
   }
 }
 

@@ -107,3 +107,16 @@
                 }
         }
 }
+
+.rewiews__btn-wrapper {
+    .slider-prev {
+        margin-right: 30px;
+        svg {
+           transform: rotate(180deg);
+        }
+    }
+        .slider-prev,
+        .slider-next {
+            background-color: transparent;
+        }
+}
