@@ -221,7 +221,7 @@ body {
 }
 
 .rewiews__btn-wrapper .slider-prev {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .rewiews__btn-wrapper .slider-prev svg {
   transform: rotate(180deg);
@@ -229,6 +229,53 @@ body {
 .rewiews__btn-wrapper .slider-prev,
 .rewiews__btn-wrapper .slider-next {
   background-color: transparent;
+  padding: 10px;
+}
+
+.btn-hero {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--mainTextColor);
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .btn-hero {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .btn-hero {
+    font-size: 20px;
+  }
+}
+.btn-hero svg {
+  fill: var(--mainTextColor);
+  margin-left: 7px;
+}
+
+.hero__btn-prev,
+.hero__btn-next {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 2.4;
+  letter-spacing: 0.2em;
+  color: var(--mainTextColor);
+  padding: 0 10px;
+  background-color: transparent;
+}
+@media screen and (min-width: 1400px) {
+  .hero__btn-prev,
+  .hero__btn-next {
+    font-size: 20px;
+  }
+}
+
+.hero__btn-prev {
+  border-right: 1px solid var(--mainTextColor);
 }
 
 .section {
@@ -300,8 +347,249 @@ body {
   fill: var(--accentColor);
 }
 
+@media screen and (max-width: 767px) {
+  .hero__socnetwork-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__socnetwork-list {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+  }
+}
+
+.hero__socnetwork-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.section__hero {
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .section__hero {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section__hero {
+    padding: 0 60px;
+  }
+}
+.section__hero .hero__wrapper {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .section__hero .hero__wrapper {
+    border-bottom: 1px solid var(--accentColor);
+  }
+}
+
+.hero__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__pic.overlay {
+  position: relative;
+}
+.hero__pic.overlay::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 10.1%, rgba(0, 0, 0, 0) 76.11%);
+}
+
+.hero__description {
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--mainTextColor);
+}
+@media screen and (min-width: 1400px) {
+  .hero__description {
+    font-size: 16px;
+  }
+}
+
+.hero__title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2666;
+  text-transform: capitalize;
+  color: var(--mainTextColor);
+  margin-top: 7px;
+  margin-bottom: 59px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__title {
+    font-size: 96px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+}
+.hero__title span {
+  color: var(--accentColor);
+}
+
+.hero__logo {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  display: flex;
+}
+
+.hero__logo-inner {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 14px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hero__logo-inner {
+    padding-top: 34px;
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__logo-inner {
+    padding-top: 44px;
+    padding-left: 44px;
+  }
+}
+.hero__logo-inner::after {
+  display: block;
+  content: "";
+  width: 63px;
+  height: 195px;
+  border-top: 4px solid var(--accentColor);
+  border-bottom: 4px solid var(--accentColor);
+  border-left: 4px solid var(--accentColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__logo-inner::after {
+    width: 74px;
+    height: 229px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__logo-inner::after {
+    width: 124px;
+    height: 383px;
+  }
+}
+
+.hero__slider {
+  overflow: hidden;
+}
+
+.hero__slider-line {
+  display: flex;
+  transition: all ease 1s;
+}
+
+.hero__btn-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 115px;
+  left: 23px;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn-wrapper {
+    bottom: 15px;
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__btn-wrapper {
+    bottom: 30px;
+    left: 250px;
+  }
+}
+
+.link__number {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  color: var(--mainTextColor);
+}
+.link__number.current {
+  color: var(--accentColor);
+}
+@media screen and (min-width: 1400px) {
+  .link__number {
+    font-size: 60px;
+  }
+}
+
+.link__description {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--mainTextColor);
+}
+@media screen and (min-width: 1400px) {
+  .link__description {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .link__description {
+    font-size: 16px;
+  }
+}
+
+.hero__list {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .hero__list {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 10px 10px 30px;
+    background-color: var(--bgColor);
+  }
+}
+
+.hero__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__link {
+    display: flex;
+    align-items: center;
+  }
+  .hero__link div {
+    margin-left: 10px;
+  }
+}
+
 .section__projects {
-  padding: 42px 15px 78px 15px;
+  padding: 42px 15px 50px 15px;
 }
 @media screen and (min-width: 768px) {
   .section__projects {
@@ -677,7 +965,7 @@ body {
 }
 
 .section__useful {
-  padding: 45px 15px 84px 15px;
+  padding: 45px 15px 50px 15px;
 }
 @media screen and (min-width: 768px) {
   .section__useful {
@@ -875,11 +1163,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
   .rewiews__btn-wrapper {
-    margin-top: 36px;
+    margin-top: 26px;
   }
 }
 

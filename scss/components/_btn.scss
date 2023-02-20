@@ -110,7 +110,7 @@
 
 .rewiews__btn-wrapper {
     .slider-prev {
-        margin-right: 30px;
+        margin-right: 20px;
         svg {
            transform: rotate(180deg);
         }
@@ -118,5 +118,47 @@
         .slider-prev,
         .slider-next {
             background-color: transparent;
+            padding: 10px;
         }
+}
+
+.btn-hero {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--mainTextColor);
+    background-color: transparent;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 20px;
+    }
+
+    svg {
+        fill: var(--mainTextColor);
+        margin-left: 7px;
+    }
+}
+
+.hero__btn-prev,
+.hero__btn-next {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 2.4;
+    letter-spacing: 0.2em;
+    color: var(--mainTextColor);
+    padding: 0 10px;
+    background-color: transparent;
+    @media screen and (min-width: $desktop) {
+        font-size: 20px;
+    }
+}
+
+.hero__btn-prev {
+    border-right: 1px solid var(--mainTextColor);
 }

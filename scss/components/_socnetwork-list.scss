@@ -16,3 +16,18 @@
         fill: var(--accentColor);
     }
 }
+
+.hero__socnetwork-list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 5%;
+        right: 7%;
+    }
+}
+
+.hero__socnetwork-item:not(:last-child) {
+    margin-bottom: 14px;
+}

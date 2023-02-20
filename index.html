@@ -28,6 +28,228 @@
   </head>
   <body>
     <main>
+      <section class="section section__hero">
+        <div class="hero__wrapper">
+          <div class="hero__slider">
+            <div class="hero__slider-line">
+              <div class="hero__slider-img">
+                <picture class="hero__pic overlay">
+                  <source
+                    srcset="
+                      ./images/hero/pic1_desktop.jpg    1x,
+                      ./images/hero/pic1@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1400px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic1_tablet.jpg    1x,
+                      ./images/hero/pic1@2x_tablet.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic1_mobile.jpg    1x,
+                      ./images/hero/pic1@2x_mobile.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/hero/pic1_desktop.jpg"
+                    alt="pic1"
+                    class="hero__img"
+                  />
+                </picture>
+              </div>
+              <div class="hero__slider-img">
+                <picture class="hero__pic overlay">
+                  <source
+                    srcset="
+                      ./images/hero/pic2_desktop.jpg    1x,
+                      ./images/hero/pic2@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1400px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic2_tablet.jpg    1x,
+                      ./images/hero/pic2@2x_tablet.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic2_mobile.jpg    1x,
+                      ./images/hero/pic2@2x_mobile.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/hero/pic2_desktop.jpg"
+                    alt="pic2"
+                    class="hero__img"
+                  />
+                </picture>
+              </div>
+              <div class="hero__slider-img">
+                <picture class="hero__pic overlay">
+                  <source
+                    srcset="
+                      ./images/hero/pic3_desktop.jpg    1x,
+                      ./images/hero/pic3@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1400px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic3_tablet.jpg    1x,
+                      ./images/hero/pic3@2x_tablet.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/pic3_mobile.jpg    1x,
+                      ./images/hero/pic3@2x_mobile.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/hero/pic3_desktop.jpg"
+                    alt="pic3"
+                    class="hero__img"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="hero__btn-wrapper">
+            <button type="button" class="btn hero__btn-prev">Prev</button>
+            <button type="button" class="btn hero__btn-next">Next</button>
+          </div>
+          <div class="hero__logo">
+            <div class="hero__logo-inner">
+              <p class="hero__description">Dubai Realty</p>
+              <p class="hero__title">
+                Welcome home <br /><span>To</span> luxury
+              </p>
+              <button type="button" class="btn btn-hero">
+                Book a consultation
+                <svg width="8px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="list hero__socnetwork-list">
+            <li class="hero__socnetwork-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="facebook"
+                class="socnetwork__link"
+              >
+                <svg width="16px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__socnetwork-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="twitter"
+                class="socnetwork__link"
+              >
+                <svg width="18px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__socnetwork-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="utub"
+                class="socnetwork__link"
+              >
+                <svg width="18px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-utub"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__socnetwork-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="linkedin"
+                class="socnetwork__link"
+              >
+                <svg width="18px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__socnetwork-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="instagram"
+                class="socnetwork__link"
+              >
+                <svg width="18px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="list hero__list">
+            <li class="hero__item">
+              <a href="" class="link hero__link">
+                <p class="link__number current">01</p>
+                <div>
+                  <p class="link__description">Lorem Ipsum</p>
+                  <p class="link__description">Dolorem apset</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero__item">
+              <a href="" class="link hero__link">
+                <p class="link__number">02</p>
+                <div>
+                  <p class="link__description">Lorem Ipsum</p>
+                  <p class="link__description">Dolorem apset</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero__item">
+              <a href="" class="link hero__link">
+                <p class="link__number">03</p>
+                <div>
+                  <p class="link__description">Lorem Ipsum</p>
+                  <p class="link__description">Dolorem apset</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="section section__projects">
         <div class="projects__list__wrapper">
           <h1 class="title">Latest projects</h1>
@@ -913,5 +1135,6 @@
   </body>
 
   <script src="./js/more.js"></script>
+  <script src="./js/hero-slider.js"></script>
   <script src="./js/slider.js"></script>
 </html>

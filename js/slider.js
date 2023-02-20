@@ -14,7 +14,7 @@ function init() {
 
     cards.forEach(item => {
         if (window.innerWidth >= 768) {
-            item.style.width = width / 2 - 15 + 'px';
+            item.style.width = `${width / 2 - 15}px`;
             item.style.height = 'auto';
         } else {
            item.style.width = width + 'px';
