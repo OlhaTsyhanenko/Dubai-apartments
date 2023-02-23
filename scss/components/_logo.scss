@@ -1,17 +1,53 @@
 .logo-title {
     font-family: 'Gilroy-Regular', sans-serif;
     font-weight: 700;
-    font-size: 28px;
     line-height: 1.2;
     color: var(--mainTextColor);
 }
 
+.nav__logo-title{
+    font-size: 18px;
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 28px;
+    }
+}
+
+.footer__logo-title {
+    font-size: 28px;
+}
+
+
 .logo-description {
-    font-size: 11px;
     color: var(--mainTextColor);
     line-height: 1.18;
     opacity: .6;
+
+}
+
+.nav__logo-description {
+    font-size: 10px;
+    margin-top: 2px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 4px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 11px;
+    }
+}
+
+.footer__logo-description {
+    font-size: 11px;
     margin-top: 4px;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: start;
 }
 
 .logo {
@@ -23,11 +59,50 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
+}
+
+.nav__logo-inner {
+    padding-top: 5px;
+    padding-left: 10px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 7px;
+        padding-left: 15px;
+    }
+}
+
+.footer__logo-inner {
     padding-top: 7px;
     padding-left: 15px;
 }
 
-.logo-inner::after {
+.nav__logo-inner::after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 49px;
+    border-top: 2px solid #FCD54C;
+    border-bottom: 2px solid #FCD54C;
+    border-left: 2px solid #FCD54C;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (min-width: $tablet) {
+        width: 36px;
+        height: 59px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 40px;
+        height: 70px;
+    }
+}
+
+.footer__logo-inner::after {
     display: block;
     content: '';
     width: 40px;

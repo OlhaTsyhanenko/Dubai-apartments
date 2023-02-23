@@ -113,12 +113,33 @@ body {
   .btn-book {
     padding: 23px 54px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__btn-book {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__btn-book {
+    margin: 0 auto;
     margin-top: 52px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .btn-book {
+  .footer__btn-book {
     margin-top: 78px;
+  }
+}
+
+.menu-open {
+  background-color: transparent;
+}
+@media screen and (min-width: 1400px) {
+  .menu-open {
+    display: none;
   }
 }
 
@@ -291,17 +312,57 @@ body {
 .logo-title {
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 700;
-  font-size: 28px;
   line-height: 1.2;
   color: var(--mainTextColor);
 }
 
+.nav__logo-title {
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__logo-title {
+    font-size: 28px;
+  }
+}
+
+.footer__logo-title {
+  font-size: 28px;
+}
+
 .logo-description {
-  font-size: 11px;
   color: var(--mainTextColor);
   line-height: 1.18;
   opacity: 0.6;
+}
+
+.nav__logo-description {
+  font-size: 10px;
+  margin-top: 2px;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo-description {
+    margin-top: 4px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__logo-description {
+    font-size: 11px;
+  }
+}
+
+.footer__logo-description {
+  font-size: 11px;
   margin-top: 4px;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: start;
 }
 
 .logo {
@@ -313,11 +374,55 @@ body {
   position: relative;
   display: inline-flex;
   flex-direction: column;
+}
+
+.nav__logo-inner {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo-inner {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__logo-inner {
+    padding-top: 7px;
+    padding-left: 15px;
+  }
+}
+
+.footer__logo-inner {
   padding-top: 7px;
   padding-left: 15px;
 }
 
-.logo-inner::after {
+.nav__logo-inner::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 49px;
+  border-top: 2px solid #FCD54C;
+  border-bottom: 2px solid #FCD54C;
+  border-left: 2px solid #FCD54C;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo-inner::after {
+    width: 36px;
+    height: 59px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__logo-inner::after {
+    width: 40px;
+    height: 70px;
+  }
+}
+
+.footer__logo-inner::after {
   display: block;
   content: "";
   width: 40px;
@@ -362,6 +467,93 @@ body {
 
 .hero__socnetwork-item:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 20px 15px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    padding: 15px 40px 20px 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header__nav {
+    padding: 20px 60px 26px 60px;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1399px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.list__languages {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .list__languages {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list__languages {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list__languages {
+    margin-left: 119px;
+  }
+}
+
+.languages_item {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  text-transform: uppercase;
+  color: var(--secondTextColor);
+}
+.languages_item:not(:last-child) {
+  margin-right: 8px;
+}
+.languages_item.current {
+  color: var(--accentColor);
+}
+
+.link__tel {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--mainTextColor);
+}
+@media screen and (max-width: 767px) {
+  .link__tel {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link__tel {
+    margin-right: 27px;
+    margin-left: 22px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .link__tel {
+    margin-right: 0;
+    margin-left: 53px;
+  }
 }
 
 .section__hero {

@@ -11,14 +11,32 @@
     @media screen and (max-width: 767px) {
         padding: 23px 54px;
         margin: 0 auto;
-        margin-top: 52px;
     }
     padding: 12px 14px;
     background-color: var(--accentColor);
     color: var(--btnTextColor);
     text-align: center;
+}
+
+.nav__btn-book {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.footer__btn-book {
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+        margin-top: 52px;
+    }
     @media screen and (min-width:$desktop) {
         margin-top: 78px;
+    }
+}
+
+.menu-open {
+    background-color: transparent;
+    @media screen and (min-width:$desktop) {
+        display: none;
     }
 }
 
