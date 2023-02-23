@@ -4,7 +4,7 @@ let heroCount = 0;
 let heroWidth;
 
 function init() {
-    console.log('resize');
+    // console.log('resize');
     heroWidth = document.querySelector('.hero__slider').offsetWidth;
     heroSliderLine.style.width = heroWidth * img.length + 'px';
     img.forEach(item => {

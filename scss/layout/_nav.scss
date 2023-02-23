@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     padding: 15px 15px 20px 15px;
+    justify-content: space-between;
     @media screen and (min-width: $tablet) {
         padding: 15px 40px 20px 40px;
     }
@@ -14,21 +15,155 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 36px 55px 12px 55px;
+        background-color: var(--bgColor);
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &.active {
+            transform: translateY(70px);
+        }
+    }
 }
 
 .header__menu {
-    @media screen and (max-width: 1399px) {
-        display: none;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-right: 150px;
     }
+}
+
+.menu__inner {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 59px;
+        border-bottom: 1px solid var(--accentColor);
+        width: 100%;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1399px) {
+        position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--bgColor);
+            transform: translateY(-100%);
+            transition: transform 0.5s;
+            display: flex;
+            flex-direction: column;
+            padding: 91px 0 78px 0;
+            align-items: center;
+
+            &.active {
+                transform: translateY(75px);
+            }
+    }
+}
+
+.revers__inner {
+    display: flex;
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.menu__item {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.214;
+    text-transform: uppercase;
+    color: var(--mainTextColor);
+    @media screen and (max-width: 1399px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        position: relative;
+        font-size: 14px;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.submenu__list {
+
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+        z-index: 1;
+        margin-top: 15px;
+        border: 1px solid var(--secondTextColor);
+        background-color: var(--bgColor);
+    }
+        &.hidden {
+            display: none;
+        }
+}
+
+.submenu__item {
+    @media screen and (max-width: 1399px) {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1399px) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        &:hover,
+        &:focus {
+            background-color: var(--accentColor);
+        }
+    }
+}
+
+.submenu__link {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.125;
+    color: var(--mainTextColor);
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+        white-space: nowrap;
+        padding: 10px 20px;
+
+        &:hover,
+        &:focus {
+            background-color: var(--accentColor);
+            color: var(--bgColor);
+        }
+    }
+}
+
+.is-active {
+    color: var(--accentColor);
+    border-bottom: 2px solid var(--accentColor);
 }
 
 .list__languages {
     display: flex;
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+    margin-top: 38px;
+
     @media screen and (min-width: $tablet) {
         margin-left: 30px;
+        margin-top: 0;
     }
     @media screen and (min-width: $tablet) {
         margin-left: 119px;
@@ -53,9 +188,7 @@
 }
 
 .link__tel {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+
     font-family: 'Gilroy-Regular', sans-serif;
     font-weight: 600;
     font-size: 16px;

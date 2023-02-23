@@ -1,6 +1,10 @@
 let btn = document.getElementsByClassName('btn-js');
 let p = document.getElementsByClassName('hidden-js');
 
+document.querySelector('.btn-menu').addEventListener('click', (event) => {
+    event.currentTarget.classList.toggle('is-active');
+})
+
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', function () {
             let content = p[i];

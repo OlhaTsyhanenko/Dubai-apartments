@@ -36,48 +36,66 @@
           </div>
         </div>
         <div class="nav__wrapper">
-          <ul class="list header__menu">
-            <li class="menu__item">
-              <button type="button" class="btn btn-menu">
-                buy
-                <svg width="7px" height="7px">
-                  <use href="./images/symbol-defs.svg#icon-menu-down"></use>
-                </svg>
-              </button>
-              <ul class="list submenu__list">
-                <li class="submenu__item">
-                  <a href="" class="link submenu__link">Category number one</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="" class="link submenu__link">Apartments in Dubai</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="" class="link submenu__link"
-                    >Category number twenty five</a
+          <div class="menu__inner">
+            <ul class="list header__menu">
+              <li class="menu__item">
+                <button type="button" class="btn btn-menu btn-js change">
+                  buy
+                  <svg
+                    width="9px"
+                    height="9px"
+                    class="btn-menu__svg checked visible"
                   >
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">blog</li>
-            <li class="menu__item">about</li>
-            <li class="menu__item">contact</li>
-          </ul>
+                    <use href="./images/symbol-defs.svg#icon-menu-down"></use>
+                  </svg>
+                  <svg
+                    width="9px"
+                    height="9px"
+                    class="btn-menu__svg not-checked"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-menu-up"></use>
+                  </svg>
+                </button>
+                <ul class="list submenu__list hidden hidden-js">
+                  <li class="submenu__item">
+                    <a class="link submenu__link">Category number one</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link">Apartments in Dubai</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link"
+                      >Category number twenty five</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">blog</li>
+              <li class="menu__item">about</li>
+              <li class="menu__item">contact</li>
+            </ul>
+          </div>
           <button type="button" class="btn btn-book nav__btn-book">
             Book a consultation
           </button>
-          <ul class="list list__languages">
-            <li class="languages_item current">En</li>
-            <li class="languages_item">Ua</li>
-          </ul>
-          <a href="tel:+72126742510" class="link link__tel"
-            >+7 (212) 674-25-10</a
-          >
-          <button type="button" class="btn menu-open">
-            <svg width="24px" height="24px">
-              <use href="./images/symbol-defs.svg#icon-menu-open"></use>
-            </svg>
-          </button>
+          <div class="revers__inner">
+            <ul class="list list__languages">
+              <li class="languages_item current">En</li>
+              <li class="languages_item">Ua</li>
+            </ul>
+            <a href="tel:+72126742510" class="link link__tel"
+              >+7 (212) 674-25-10</a
+            >
+          </div>
         </div>
+        <button type="button" class="btn menu-open change">
+          <svg width="24px" height="24px" class="checked">
+            <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+          </svg>
+          <svg width="24px" height="24px" class="not-checked visible">
+            <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+          </svg>
+        </button>
       </section>
     </header>
     <main>
@@ -1187,6 +1205,7 @@
     </footer>
   </body>
 
+  <script src="./js/burger.js"></script>
   <script src="./js/more.js"></script>
   <script src="./js/hero-slider.js"></script>
   <script src="./js/slider.js"></script>

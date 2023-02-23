@@ -7,7 +7,42 @@
     font-size: 14px;
 }
 
+.btn-menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.214;
+    text-transform: uppercase;
+    color: var(--mainTextColor);
+        .btn-menu__svg {
+            display: none;
+            margin-left: 20px;
+            @media screen and (min-width:$desktop) {
+                width: 7px;
+                height: 7px;
+                margin-left: 4px;
+            }
+        }
+
+        .visible {
+            display: block;
+        }
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+    }
+}
+
+.menu-open {
+    .visible {
+        display: none;
+    }
+}
+
 .btn-book {
+    font-weight: 600;
     @media screen and (max-width: 767px) {
         padding: 23px 54px;
         margin: 0 auto;
@@ -20,7 +55,9 @@
 
 .nav__btn-book {
     @media screen and (max-width: 767px) {
-        display: none;
+        padding: 12px 14px;
+        margin-top: 38px;
+        margin-bottom: 38px;
     }
 }
 .footer__btn-book {
